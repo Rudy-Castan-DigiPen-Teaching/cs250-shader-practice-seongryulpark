@@ -40,5 +40,5 @@ void main()
 
     color = mix(color, vec3(0., 0., 0.), sin(u_time));
 
-    FragColor = vec4(1., 0., 0., 1.0);
+    FragColor = vec4(color, 1.0);
 }

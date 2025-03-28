@@ -4,7 +4,7 @@ precision mediump float;
 #define PI 3.14159265359
 
 /**
- * \title 03_gradient.frag
+ * \title 02_gradient.frag
  * \author Rudy Castan
  * \author seongryul park
  * \date Mar. 28th 2025 Spring

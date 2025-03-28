@@ -4,7 +4,7 @@ precision mediump float;
 /**
  * \file
  * \author Rudy Castan
- * \author TODO Your Name
+ * \author seongryul park
  * \date 2025 Spring
  * \par CS250 Computer Graphics II
  * \copyright DigiPen Institute of Technology
