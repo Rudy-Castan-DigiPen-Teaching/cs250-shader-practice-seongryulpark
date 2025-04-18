@@ -45,16 +45,22 @@ float circle(vec2 point, vec2 center, float radius) {
     return 1. - smoothstep(-E, E, sd);
 }
 
-
+vec2 calculate_each_pos(float count) {
+    count = count * 30.;
+    vec2(cos(u_time - count), sin(u_time - count))*0.25 * sin((u_time - count) * 0.25) + vec2(0.5);
+}
 
 void main(void)
 {
     vec2 position = to_coord(gl_FragCoord.xy);
     vec3 color = vec3(0.2353, 0.8235, 0.8667);
-  
-    vec2 p = vec2(cos(u_time), sin(u_time))*0.25 + vec2(0.5);
-    float t = circle(position, p  ,0.125);
-    color = mix(color, vec3(1), t);
-    
+
+    for(float cnt = 0.; cnt < 6.; cnt++) {
+        vec2 p = calculate_each_pos(cnt);
+
+        float t = circle(position, p, 0.125);
+        color = mix(color, vec3(0., 1., 0.), t);
+    }
+
     FragColor = vec4(color, 1.0);
 }
