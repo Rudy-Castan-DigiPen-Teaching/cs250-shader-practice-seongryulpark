@@ -5,3 +5,5 @@
 [Gradient](draw.html?shader=02_gradient.frag)
 
 [HSV](draw.html?shader=03_hsv.frag)
+
+[Circle](draw.html?shader=04_circle.frag)
